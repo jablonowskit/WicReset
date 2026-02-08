@@ -32,3 +32,9 @@
   - Proxy writes `OID HEX` pairs from SNMP responses to `logs/epson_proxy-learn-YYYYMMDD-HHMMSS.log`.
   - Override path with `--learn-file <path>`.
   - Default is merge/dedup. Use `--no-learn-merge` to append with timestamps.
+
+### Replay
+- `replay_traffic.py` can replay discovery + SNMP GETs.
+- Source options:
+  - `--learn-file <path>` (learn map)
+  - `--proxy-log <path>` (proxy log; SNMP lines are parsed for OIDs)

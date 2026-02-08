@@ -33,3 +33,9 @@ Options:
 Logs (created at runtime):
 - `logs/epson_proxy-YYYYMMDD-HHMMSS.log` — request/response log.
 - `logs/epson_proxy-learn-YYYYMMDD-HHMMSS.log` — learned OID map (dedup by default).
+
+## Replay
+Replays discovery + SNMP GETs based on a learn map:
+```
+py .\replay_traffic.py --learn-file .\logs\epson_proxy-learn-YYYYMMDD-HHMMSS.log
+```
