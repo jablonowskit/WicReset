@@ -1,0 +1,4 @@
+pysnmp>=4.4.12
+scapy>=2.7.0
+zeroconf>=0.148.0
+ippserver>=0.2
